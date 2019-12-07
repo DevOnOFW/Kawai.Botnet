@@ -48,7 +48,7 @@ echo $B."\nDate    : 29-04-2018                 ".$R."+";
 echo $R."\n++++++++++++++++++++++++++++++++++++++".$G."\n\n";
 if(isset($argv[1]) AND isset($argv[2]) AND isset($argv[3]) AND isset($argv[4])) {
 	for($x=0;$x<$argv[4];$x++) {
-	$proxy=json_decode(file_get_contents("http://spys.one/free-proxy-list/US/"),1);
+	$proxy=json_decode(file_get_contents("https://www.us-proxy.org/"),1);
 $port=$proxy['data'][0]['port'];
 $ip=$proxy['data'][0]['ip'];
 	echo "Connecting To\t=> ".$proxy['data'][0]['ip'].':'.$proxy['data'][0]['port']."\n";
